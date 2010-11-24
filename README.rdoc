@@ -6,12 +6,6 @@
 
 A tool for parsing the output of SysBench IO tests and then graphing it
 
-== DOCUMENTATION:
-
-Documentation is available online at at rdoc.info[http://rdoc.info/projects/chetan/sysbench-graph]
-
-== FEATURES:
-
 == SYNOPSIS:
 
   This tool was designed to work with the Percona SysBench script found here:

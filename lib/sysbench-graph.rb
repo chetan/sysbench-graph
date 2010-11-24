@@ -100,7 +100,7 @@ end
 DataSet.create.data = profiles
 
 puts ''
-puts 'Going to start server at http://localhost:4756/'
+puts 'Going to start server at http://localhost:4567/'
 puts ''
 
 Sinatra::Application.run = true

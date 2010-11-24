@@ -4,8 +4,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "sysbench-graph"
-    gemspec.summary = "Tool for parsing output of SysBench IO tests"
-    gemspec.description = "Tool for parsing output of SysBench IO tests"
+    gemspec.summary = "A tool for graphing SysBench IO tests"
+    gemspec.description = "A tool for parsing the output of SysBench IO tests and then graphing it"
     gemspec.email = "chetan@betteradvertising.com"
     gemspec.homepage = "http://github.com/chetan/sysbench-graph"
     gemspec.authors = ["Chetan Sarva"]
@@ -16,13 +16,3 @@ begin
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end
-
-# require "rake/testtask"
-# desc "Run unit tests"
-# Rake::TestTask.new("test") { |t|
-#     #t.libs << "test"
-#     t.ruby_opts << "-rubygems"
-#     t.pattern = "test/**/*_test.rb"
-#     t.verbose = false
-#     t.warning = false
-# }

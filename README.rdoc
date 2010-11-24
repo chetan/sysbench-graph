@@ -1,0 +1,67 @@
+= sysbench-graph
+
+* http://github.com/chetan/sysbench-graph
+
+== DESCRIPTION:
+
+A tool for parsing the output of SysBench IO tests and then graphing it
+
+== DOCUMENTATION:
+
+Documentation is available online at at rdoc.info[http://rdoc.info/projects/chetan/sysbench-graph]
+
+== FEATURES:
+
+== SYNOPSIS:
+
+  This tool was designed to work with the Percona SysBench script found here:
+  
+  https://gist.github.com/712484
+  
+  It is not necessary to use this exact script, however this program excepts each
+  test directory to contain the results for 1, 4, 8 and 16 threads. You can configure
+  the actual tests however you like.
+  
+  Once tests are completed, you can graph them like so:
+  
+  $ sysbench-graph [dir1 dir2 dir3 ...]
+  
+  Then view the results in your browser at:
+  
+  http://localhost:4567/
+  
+  That's all there is to it!
+
+== REQUIREMENTS:
+
+* json
+* sinatra
+
+== INSTALL:
+
+  $ sudo gem install sysbench-graph
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2010 Better Advertising, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+if ARGV.empty? then
+    puts "usage: sysbench-graph [dir1 dir2 dir3 ...]"
+    exit
+end
+
+require 'rubygems'
+require 'sysbench-graph'
+

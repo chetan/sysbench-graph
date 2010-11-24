@@ -5,6 +5,5 @@ if ARGV.empty? then
     exit
 end
 
-require 'rubygems'
 require 'sysbench-graph'
 

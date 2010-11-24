@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'json'
 require 'sinatra'
 
@@ -27,6 +26,7 @@ get "/" do
     body << <<-EOF
 <html>
   <head>
+    <title>sysbench-graph: #{test} reqs/sec</title>
     <!--[if IE]><script language="javascript" type="text/javascript" src="/js/excanvas.js"></script><![endif]--> 
     <script type='text/javascript' src='/js/jquery.min.js'></script>
     <script type='text/javascript' src='/js/jquery.flot.js'></script>
@@ -102,3 +102,5 @@ DataSet.create.data = profiles
 puts ''
 puts 'Going to start server at http://localhost:4756/'
 puts ''
+
+Sinatra::Application.run = true
